@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Dojo Boilerplate</title>
+    <link rel="stylesheet" href="app/resources/app.css">
+</head>
+
+<body class="claro">
+
+    <div id="loaderDiv"><span>Loading.. Please Wait...</span>
+        <div id="loadingProgressG">
+            <div id="loadingProgressG_1" class="loadingProgressG">
+            </div>
+        </div>
+    </div>
+
+    <div id="topDropDowns" class="topDropDowns"></div>
+    <div id="mainLayout" class="mainLayout"></div>
+
+    <script>
+    var dojoConfig = {
+    useDeferredInstrumentation: false,
+        cacheBust:false,    
+        // Enable the AMD loader
+        async: true,
+        // Define the base URL for all of our modules and packages
+        baseUrl: '',
+        // Enable debugging
+        isDebug: true,
+        // Register the packages we are going to be using. These sam,e packages should be defined in the
+        // build profile in `app.profile.js`.
+        packages: [
+            // Using a string as a package is shorthand for `{ name: 'app', location: 'app' }`
+            'app',
+            'dojo',
+            'dijit'
+        ],
+        // Use the smaller, faster "lite" CSS selector engine, which works in all browsers IE8+
+        selectorEngine: 'lite',
+        // Fix the loader to use normal AMD resolution of unregistered module paths (relative to `baseUrl`)
+        // instead of the legacy Dojo resolution method (relative to the parent directory of `baseUrl`)
+        tlmSiblingOfDojo: false
+    };
+    </script>
+    <script src="dojo/dojo.js"></script>
+    <script>
+    require(['app/app']);
+    </script>
+</body>
+
+</html>

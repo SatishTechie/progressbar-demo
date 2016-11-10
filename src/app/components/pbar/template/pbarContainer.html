@@ -1,0 +1,15 @@
+<div class="pbarContainer">
+	<div class="header">Progress Bars Demo</div>
+    <div data-dojo-type="dijit/layout/ContentPane"  data-dojo-attach-point="pbarContNode">
+    </div>
+    <div class="ctrl">
+        <div data-dojo-attach-point="selectNode" data-dojo-type="dijit/layout/ContentPane" >
+            <select data-dojo-attach-point="barSelect" class="barCmb" dojoattachevent="" data-dojo-props="searchAttr:'label',maxHeight :200,forceWidth :true" data-dojo-type="dijit/form/FilteringSelect" fetchProperties="{sort:[{attribute:'label', descending:false}]}"></select>
+        </div>
+        <div data-dojo-type="dijit/layout/ContentPane"  data-dojo-attach-point="pbarContCtrNode">
+            
+        </div>
+
+    </div>
+    <div class="err" data-dojo-attach-point="pbarErrNode"></div>
+</div>

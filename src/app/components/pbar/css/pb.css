@@ -1,0 +1,52 @@
+#loaderDiv {
+    padding: 5px;
+    font-size: 14px;
+}
+
+#tpc_1 {
+    background-color: #333;
+}
+
+#bpc_1 {
+    background-color: #333;
+}
+
+.pbarContainer {
+    margin: 0 auto;
+    padding: 15px;
+    display: inline-block;
+    width: 420px;
+    border: 1px solid #a3a2a5;
+    box-shadow: 0px 3px 7px 1px #a3a2a5;
+}
+
+.header {
+    text-align: center;
+}
+
+.pbarContainer .header {
+    text-align: center;
+    font-size: 18px;
+}
+
+.ctrl {
+    display: inline-block;
+    width: inherit;
+}
+
+.ctrl > div {
+    float: left;
+    width: 46%;
+}
+
+.claro .dijitSelect,
+.claro .dijitTextBox {
+    margin: 5px;
+}
+
+.err {
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    color: red;
+}
